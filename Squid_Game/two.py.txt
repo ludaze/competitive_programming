@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 class Solution:
     def minOperations(self, logs: List[str]) -> int:
         m='../'
@@ -13,3 +14,20 @@ class Solution:
                 stack.append(i)
         return(len(stack))
 Console
+=======
+class Solution:
+    def minOperations(self, logs: List[str]) -> int:
+        m='../'
+        r='./'
+        stack=[]
+        for i in logs:
+            if(i==m):
+                if(len(stack)>0):
+                    stack.pop()
+            elif(i==r):
+                continue
+            else:
+                stack.append(i)
+        return(len(stack))
+Console
+>>>>>>> 83a97a480120fe9c4aba8650feddcba149a718e7
